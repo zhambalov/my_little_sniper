@@ -246,7 +246,7 @@ class NFTSniperBot:
             app.add_handler(CommandHandler("set_multiplier", self.set_multiplier))
             app.add_handler(CommandHandler("set_interval", self.set_interval))
             app.add_handler(
-                CommandHandler("buy", self.buy_command, pattern=r'^/buy_\d+)
+                CommandHandler("buy", self.buy_command, pattern=r'^/buy_\d+$')
             )
 
             # Start the bot
